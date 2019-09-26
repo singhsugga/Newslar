@@ -10,10 +10,10 @@
           <li><a target="_blank" href="https://www.facebook.com/surajsugga"><i class="material-icons left">launch</i>Facebook</a></li>
           <li><a arget="_blank"href="https://www.linkedin.com/in/surajsuggasingh/"><i class="material-icons left">launch</i>Linkedin</a></li>
         </ul> -->
-        <ul id="nav-mobile" class="right show-on-small hide-on-med-and-up">
+        <!-- <ul id="nav-mobile" class="right show-on-small hide-on-med-and-up">
             <li><a  onclick="location.reload();"><i class="material-icons">refresh</i></a></li>
           <li><a target="_blank" href="https://surajkumar.info/"><i class="material-icons">launch</i></a></li>
-        </ul>
+        </ul> -->
       </div>
   </nav>
   </div>
@@ -54,6 +54,7 @@
           <a href="{{headline.url}}" target="_blank" class="waves-effect waves-light btn-small round-btn deep-purple darken-2">Full Story</a>
            &nbsp; 
           <a (click)="share(headline)"  class="waves-effect waves-light btn-small round-btn deep-purple darken-2">Share</a>
+          <button (click)="speak(headline)" [disabled]="started"  class="waves-effect waves-light btn-small round-btn deep-purple darken-2 right">SPEAK</button>
         </div>
       </div>
     </div>
