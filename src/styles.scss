@@ -1,1 +1,164 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('http://fonts.googleapis.com/icon?family=Material+Icons');
+
+html,
+body {
+  height: 100%;
+  display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1 0 auto;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9999;
+}
+.tab :hover{
+  background-color:none !important;
+}
+.round-btn {
+  border-radius: 25px !important;
+}
+.loading-news {
+  height: auto;
+  background-color: black;
+  color: beige;
+  margin-top: 25px;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  border-radius: 25px;
+}
+.search {
+  width: 50% !important;
+  align-self: center;
+  background-color: gainsboro !important;
+  border-radius: 10px !important;
+  text-align: center;
+ 
+}
+.material-icons:before{display:none;}
+.card-conatiner{
+  height:135px;
+}
+.icon {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.source{
+  position: absolute;
+  left:10px;
+  top:10px;
+}
+.tab{
+    color:white !important;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:black;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:black;
+}
+
+
+body {
+  padding-top: 0px;
+ 
+}
+
+
+.news-link:hover{
+ opacity: 0.5;
+}
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.2 em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 10 em; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: '';
+  
+  /* */
+  /* margin-right: -1em;
+  padding-right: 1em; */
+}
+.block-with-text:before {
+  /* points in the end */
+  content: '';
+  
+  /* set position to right bottom corner of block */
+
+  bottom: 0;
+}
+.block-with-text:after {
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  width: 1em;
+  /* set width and height */
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.share{
+  position: absolute;
+  left:2px;
+  bottom:15px;
+}
+.read-more{
+ position: absolute;
+ right:5px;
+ bottom:10px;
+}
+.page-footer{
+  margin-bottom:55px;
+}
+/* Responsive Styles */
+@media (max-width: 500px) {
+  .card-container{
+    height:auto;
+  }
+  .search {
+    width: 90% !important;
+    align-self: center;
+    background-color: #f3e5f5 !important;
+    border-radius: 10px !important;
+    text-align: center;
+    color:black;
+  }
+}
+.card-title{
+    font-size:18px !important;
+    font-weight: 300 !important;
+}
