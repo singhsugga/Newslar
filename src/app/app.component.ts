@@ -1,6 +1,7 @@
 import { DataService } from './data.service';
 import { ShareService } from './share.service';
 import { Component ,OnInit} from '@angular/core';
+import {SwUpdate} from '@angular/service-worker';
 
 @Component({
   selector: 'app-root',
@@ -12,9 +13,12 @@ export class AppComponent {
   loading=true;
   started = false;
  
-  constructor(private ShareService:ShareService, private data:DataService){
+  constructor(updates: SwUpdate, private ShareService:ShareService, private data:DataService){
+    updates.available.subscribe(event => {
 
-  }
+      updates.activateUpdate().then(() => document.location.reload());
+  });
+}
   ngOnInit(){
      this.data.getHeadlines().subscribe(data=>{
        this.headlines=data;
