@@ -16,13 +16,13 @@ export class ShareService {
         text: headline.description,
         url:headline.url
       }).then(() => {
-        alert('News Shared Succesfully');
+        console.log('News Shared Succesfully');
       })
       .catch(err => {
-      alert(`Couldn't share because of`+ err.message);
+        console.log(`Couldn't share because of`+ err.message);
       });
     } else {
-      alert('web share not supported');
+      console.log('web share not supported');
     }
    }
   }
