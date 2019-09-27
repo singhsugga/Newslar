@@ -41,6 +41,11 @@ export class AppComponent {
 
 
 
+
+
+
+   
+//text to speech logic starts here
    speaks = [
   {
     "name": "Alex",
